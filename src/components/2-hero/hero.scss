@@ -1,0 +1,143 @@
+/* ===========================
+ table of contents
+==============================
+1. Left Section
+2. Right Section ==> animation*/
+
+
+
+section.hero {
+    margin-top: 3rem;
+}
+
+/* ========================
+    1. Left Section
+=========================== */
+
+
+section.hero {
+    .left-section {
+        flex-grow: 1;
+
+        .parent-avatar.flex {
+            align-items: end;
+            gap: 0.3rem;
+            margin-left: 1rem;
+
+            .avatar {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 1px solid darkorange;
+                padding: 1px;
+                box-shadow: 2px 2px 40px rgba(203, 200, 200, 0.586) inset;
+
+            }
+
+            .icon-verified {
+                color: var(--blue);
+                font-size: 1.1rem;
+                margin-bottom: 0.3rem;
+            }
+        }
+
+        .info {
+            margin-block: 1rem;
+            max-width: 600px;
+
+            
+
+            h1.title {
+                font-size: 3rem;
+                line-height: 3.3rem;
+                margin: 10px 0;
+                color: var(--title);
+            }
+
+            h2 {
+                font-size: 1.6rem;
+                line-height: 1.8rem;
+                margin: 5px 0 10px;
+                color: var(--title);
+            }
+
+            p.subtitle {
+                color: var(--subtitle);
+                font-size: .9rem;
+                line-height: 1.6rem;
+                margin-bottom: 32px;
+            }
+
+            .all-icons {
+                font-size: 1.3rem;
+                gap: 1.5rem;
+                color: var(--subtitle);
+
+                .icon:hover {
+                    font-size: 1.4rem;
+                    transition: 0.3s;
+                    cursor: pointer;
+                    color: var(--icon-hover);
+                }
+            }
+
+
+        }
+
+
+
+
+        .all-icons {
+            font-size: 1.3rem;
+            gap: 1.5rem;
+            color: var(--subtitle);
+        }
+
+        .all-icons .icon:hover {
+            font-size: 1.4rem;
+            transition: 0.3s;
+            cursor: pointer;
+            color: var(--icon-hover);
+        }
+
+
+    }
+
+
+}
+.sub-info {
+    display: inline-block;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    padding: .25rem .75rem;
+    margin-bottom: 1rem;
+    color: var(--blue);
+    background-color: var(--bgHeader);
+    border-radius: 50px;
+}
+.light .sub-info{
+    background-color: rgba(213, 219, 237, 0.482);
+}
+
+/* ===================================
+    2. Right Section ==> animation
+====================================== */
+
+section.hero {
+    .right-section {
+        flex-grow: 2;
+        .animation{
+            
+        }
+    }}
+    @media (max-width: 900px) {
+        section.hero {
+            .right-section {
+                flex-grow: 2;
+                .animation{
+                    display: none;
+                }
+            }}
+      
+      }
