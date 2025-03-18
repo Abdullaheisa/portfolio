@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./main.scss";
 import React, { forwardRef } from "react";
 // eslint-disable-next-line no-unused-vars
-import { AnimatePresence,motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 import { myProjects } from "./myProjects";
 
@@ -58,37 +58,46 @@ export const Main = forwardRef((props, ref) => {
         </button>
       </section>
       <section className="flex right-section">
-      <AnimatePresence>
-        {arr.map((item) => {
-          return (
-            <motion.article layout
-            initial={{ transform: "scale(0.4)" }}
-            animate={{ transform: "scale(1)" }}
-            transition={{ type: "spring", damping: 8, stiffness: 50 }} key={item.id} className="card">
-              <img src={item.img} alt="" />
-              <div className="box">
-                <h1 className="title">{item.titlePro}</h1>
-                <p className="sub-title">
-                  Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex
-                  tempore dolor in, accusantium laudantium accusamus.
-                </p>
-                <div className="icons flex">
-                  <div style={{ gap: ".8rem" }} className="flex">
-                    
-                    <a href={item.gitHup} className="icon-github" target="blank"></a>
+        <AnimatePresence>
+          {arr.map((item) => {
+            return (
+              <a href={item.linkpro} target="blank">
+                <motion.article
+                  layout
+                  initial={{ transform: "scale(0.4)" }}
+                  animate={{ transform: "scale(1)" }}
+                  transition={{ type: "spring", damping: 8, stiffness: 50 }}
+                  key={item.id}
+                  className="card"
+                >
+                  <img src={item.img} alt="" />
+                  <div className="box">
+                    <h1 className="title">{item.titlePro}</h1>
+                    <p className="sub-title">
+                      Lorem ipsum dolor sit amet consectetur elit adipisicing .
+                      Ex tempore dolor in, accusantium laudantium accusamus.
+                    </p>
+                    <div className="icons flex">
+                      <div style={{ gap: ".8rem" }} className="flex">
+                        <a
+                          href={item.gitHup}
+                          className="icon-github"
+                          target="blank"
+                        ></a>
+                      </div>
+                      <a href={item.linkpro} target="blank" className="flex">
+                        more
+                        <span
+                          style={{ alignSelf: "end" }}
+                          className="icon-arrow-right"
+                        ></span>
+                      </a>
+                    </div>
                   </div>
-                  <a href={item.linkpro} target="blank" className="flex">
-                    more
-                    <span
-                      style={{ alignSelf: "end" }}
-                      className="icon-arrow-right"
-                    ></span>
-                  </a>
-                </div>
-              </div>
-            </motion.article>
-          );
-        })}
+                </motion.article>
+              </a>
+            );
+          })}
         </AnimatePresence>
       </section>
     </main>

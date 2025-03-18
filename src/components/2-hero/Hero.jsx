@@ -44,10 +44,10 @@ export const Hero = () => {
             </p>
           </div>
           <div className="all-icons flex">
-            <div className="icon icon-instagram"></div>
+            <a  className="icon icon-instagram" />
             <div className="icon icon-linkedin"></div>
             <div className="icon icon-facebook"></div>
-            <div className="icon icon-github"></div>
+            <a href="https://github.com/Abdullaheisa" target="blank" className="icon icon-github"/>
           </div>
         </div>
       </div>
