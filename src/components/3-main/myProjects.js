@@ -55,5 +55,29 @@ export const myProjects = [
     gitHup: "https://github.com/Abdullaheisa/socialMedia",
     linkpro: "https://aocialmedia-website.netlify.app/",
   },
+  {
+    id: 8,
+    titlePro: "E-comerce",
+    catogray: ["js"],
+    img: "./images/ecomerce.png",
+    gitHup: "https://github.com/Abdullaheisa/E-commerce-with-js",
+    linkpro: "https://",
+  },
+  {
+    id: 9,
+    titlePro: "Travilo",
+    catogray: ["react"],
+    img: "./images/travilo.png",
+    gitHup: "https://github.com/Abdullaheisa/travilo/tree/master",
+    linkpro: "https://abdullaheisa.github.io/travilo/",
+  },
+  {
+    id: 10,
+    titlePro: "Marvil",
+    catogray: ["react"],
+    img: "./images/marvil.png",
+    gitHup: "https://github.com/Abdullaheisa/Marvil",
+    linkpro: "https://abdullaheisa.github.io/Marvil/",
+  },
 
 ];
