@@ -61,7 +61,7 @@ export const myProjects = [
     catogray: ["js"],
     img: "./images/ecomerce.png",
     gitHup: "https://github.com/Abdullaheisa/E-commerce-with-js",
-    linkpro: "https://",
+    linkpro: "https://abdullaheisa.github.io/E-commerce-with-js/",
   },
   {
     id: 9,
